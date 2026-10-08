@@ -285,32 +285,41 @@ cursor: pointer;
 .footer__brand { display: flex; align-items: center; gap: 8px; }
 .footer__brand img { width: 28px; height: 28px; }
 .footer a:hover { color: var(--accent-dark); }
-/* Mobile */
+/*mobile*/
 @media (max-width: 800px) {
   .nav { display: none; }
   .grid--3, .steps { grid-template-columns: 1fr; }
   .hero { padding: 60px 0 50px; }
   .section { padding: 56px 0; }
   .stats { gap: 24px; }
-    .section-zakaz {
+  .section-zakaz {
+    position: relative !important;
+    top: 0 !important;
     height: auto !important;
     min-height: auto !important;
     padding: 40px 20px !important;
   }
-  
+  .text-zakaz {
+    position: static !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
   .div-zakaz {
     position: static !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 12px !important;
     margin-top: 20px !important;
+    height: auto !important;
+    width: 100% !important;
+    z-index: 1 !important;
   }
-
-  /* Сбрасываем абсолютное позиционирование для всех инпутов разом */
   .name, .number, .select, .send-zakaz {
     position: static !important;
-    width: 100% !important; /* На телефоне они встанут во всю ширину экрана */
-    height: 44px !important;
+    width: 100% !important;
+    height: 46px !important; 
     margin: 0 !important;
   }
 }
+
