@@ -292,4 +292,25 @@ cursor: pointer;
   .hero { padding: 60px 0 50px; }
   .section { padding: 56px 0; }
   .stats { gap: 24px; }
+    .section-zakaz {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 40px 20px !important;
+  }
+  
+  .div-zakaz {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Сбрасываем абсолютное позиционирование для всех инпутов разом */
+  .name, .number, .select, .send-zakaz {
+    position: static !important;
+    width: 100% !important; /* На телефоне они встанут во всю ширину экрана */
+    height: 44px !important;
+    margin: 0 !important;
+  }
 }
